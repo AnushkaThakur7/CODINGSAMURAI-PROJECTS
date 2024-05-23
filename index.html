@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALCULATOR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="h">
+    <input type="text" placeholder="0" id="GiveInput" readonly >
+    <div>
+      <button class="operators" onclick="Clear()">CE</button>
+      <button class="operators" onclick="AllClear()" >AC</button>
+      <button class="operators" onclick="appendtoGiveInput('%')" >%</button>
+      <button class="operators" onclick="appendtoGiveInput('/')" >/</button>
+    </div>
+    <div>
+      <button onclick="appendtoGiveInput('7')">7</button>
+      <button onclick="appendtoGiveInput('8')" >8</button>
+      <button onclick="appendtoGiveInput('9')">9</button>
+      <button class="operators" onclick="appendtoGiveInput('*')">*</button>
+    </div>
+    <div>
+      <button onclick="appendtoGiveInput('4')">4</button>
+      <button onclick="appendtoGiveInput('5')">5</button>
+      <button onclick="appendtoGiveInput('6')">6</button>
+      <button class="operators" onclick="appendtoGiveInput('-')">-</button>
+    </div>
+    <div>
+      <button onclick="appendtoGiveInput('1')">1</button>
+      <button onclick="appendtoGiveInput('2')">2</button>
+      <button onclick="appendtoGiveInput('3')">3</button>
+      <button class="operators" onclick="appendtoGiveInput('+')">+</button>
+    </div>
+    <div>
+      <button onclick="appendtoGiveInput('00')">00</button>
+      <button onclick="appendtoGiveInput('0')">0</button>
+      <button onclick="appendtoGiveInput('.')">.</button>
+      <button class="operators" onclick="Calculate()">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
