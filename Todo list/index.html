@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TO-do List Web Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="Video_Background">
+    <video autoplay muted loop id="myVideo">
+      <source src="/PROJECTS/Todo list/wave.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="content">
+    <div class="heading">
+      <h1>✍️To-Do List</h1>
+    </div>
+    <div class="main">
+      <input type="text" class="input" placeholder="Enter Your New Task">
+      <button class="ADD_button">Add</button>
+      <select name="todo" class="todo-filter">
+        <option value="All">All Tasks</option>
+        <option value="Completed">Completed Tasks</option>
+        <option value="Incomplete">Incomplete Task</option>
+      </select>
+    </div>
+    <ul class="todo-container">
+    </ul>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
